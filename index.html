@@ -45,9 +45,22 @@
 
 	<script type="text/javascript">
 		
-		$.get("info.txt", function(data) {
+		$.$.ajax({
+			url: 'info.txt',
+			type: 'default GET (Other values: POST)',
+			dataType: 'default: Intelligent Guess (Other values: xml, json, script, or html)',
+			data: {param1: 'value1'},
+		})
+		.done(function(data) {
 			alert(data);
+		})
+		.fail(function() {
+			console.log("error");
+		})
+		.always(function() {
+			console.log("complete");
 		});
+
 
 	</script>
 
