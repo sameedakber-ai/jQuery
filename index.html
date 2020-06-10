@@ -46,13 +46,13 @@
 	<script type="text/javascript">
 		
 		$.ajax({
-			url: 'info.txt'
+			url: 'infoo.txt'
 		})
 		.done(function(data) {
 			alert(data);
 		})
 		.fail(function() {
-			console.log("error");
+			alert("Could not get data");
 		})
 		.always(function() {
 			console.log("complete");
