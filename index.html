@@ -42,6 +42,7 @@
 	<div style="clear: both;"></div>
 	<p id="someText">This is some text</p>
 	<p><button type="text">Fade</button></p>
+	<p id="moreText"></p>
 
 	<script type="text/javascript">
 		
@@ -49,7 +50,7 @@
 			url: 'info.txt'
 		})
 		.done(function(data) {
-			alert(data);
+			$("moreText").attr('text', 'yolo');
 		})
 		.fail(function() {
 			alert("Could not get data");
